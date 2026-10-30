@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RepoGuide AI 🧭⚡
 
 > **AI-Powered GitHub Repository Understanding Assistant**
@@ -220,3 +221,6 @@ npm run dev
 - [ ] **Milestone 4:** RAG Pipeline with LangChain & Groq API.
 - [ ] **Milestone 5:** Interactive Repository Exploration UI & Code Chat.
 
+=======
+# repoguide
+>>>>>>> 4ab14462d3465c78e8be7cace3491c1f6f5fde69
