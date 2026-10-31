@@ -19,6 +19,13 @@ ENV/
 .env.*
 !.env.example
 
+# Local Vector Storage & AI Model Caches
+data/
+storage/
+chroma_db/
+.cache/
+hf_models/
+
 # Editor files
 .vscode/
 .idea/
@@ -30,4 +37,3 @@ ENV/
 .coverage
 htmlcov/
 *.log
-

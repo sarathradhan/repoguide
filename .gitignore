@@ -9,6 +9,13 @@ node_modules/
 .env.*.local
 !.env.example
 
+# Local Vector Storage & Model Caches
+data/
+chroma_db/
+backend/data/
+backend/storage/
+.cache/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -51,4 +58,3 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 *.log
-

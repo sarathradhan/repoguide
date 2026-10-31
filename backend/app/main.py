@@ -2,12 +2,14 @@
 from datetime import datetime, timezone
 import logging
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.core.config import settings
 from app.routes.health import router as health_router
+from app.routes.repository import router as repository_router
 from app.routes.root import router as root_router
 
 # Configure logging
@@ -61,7 +63,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         status_code=422,
         content={
             "error": "Validation Error",
-            "detail": exc.errors(),
+            "detail": jsonable_encoder(exc.errors()),
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "path": request.url.path,
         },
@@ -86,6 +88,7 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 # Register Routers
 app.include_router(root_router)
 app.include_router(health_router)
+app.include_router(repository_router)
 
 
 if __name__ == "__main__":
