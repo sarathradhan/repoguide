@@ -36,7 +36,7 @@
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 ### Backend
 - **Python 3.13+**
