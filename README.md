@@ -1,11 +1,11 @@
-# RepoGuide AI 🧭⚡
+# RepoGuide AI
 
 > **AI-Powered GitHub Repository Understanding Assistant**
 > Accelerate codebase onboarding, trace complex architecture, and query repository semantics.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Milestones Completed](#milestones-completed)
 - [Technology Stack](#technology-stack)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 **RepoGuide AI** is an intelligent assistant designed to help developers inspect, comprehend, and navigate complex GitHub repositories. By integrating modern LLM reasoning with repository AST parsing and semantic vector search (RAG), RepoGuide AI acts as an interactive code companion.
 
@@ -62,7 +62,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 repoguide-ai/
@@ -136,7 +136,7 @@ repoguide-ai/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Python 3.10+** (Python 3.13 tested)
@@ -195,7 +195,7 @@ repoguide-ai/
 
 ---
 
-## 💻 Running the Application
+## Running the Application
 
 ### 1. Start the Backend Server
 From the `backend/` folder (with virtual environment active):
@@ -215,7 +215,7 @@ npm run dev
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 | Method | Endpoint | Description | Request Body | Response Schema |
 |---|---|---|---|---|
@@ -310,7 +310,7 @@ Conversation totals, daily question counts, topics, cited files, activity, and c
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [x] **Milestone 1:** Project Setup, Modular Backend Architecture & React-FastAPI Integration.
 - [x] **Milestone 2:** GitHub Repository Ingestion, File Filtering & Concurrent Downloader.
